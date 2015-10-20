@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /vwhci
+exclude: ['README.md',]

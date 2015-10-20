@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /home/iaset/public_html/avestia.com/VWHCI/2015/inprogress/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user

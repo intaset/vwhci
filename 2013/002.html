@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VWHCI - Developing Wii Balance Games to Increase Balance A Multi-Disciplinary Approach</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<!--Goole Analytics Most Visited Article Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45643601-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Include Most Visited Articles JS Code -->
+ <script type="text/javascript" src="mostvisited.js"></script> 
+ 
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div class="header">
+
+    <div class="container">
+
+      <div class="row">
+
+        <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12">
+
+
+          <div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">	
+					<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+
+                    </ul>
+
+                  </div>
+
+                  <!--/.nav-collapse -->
+
+                </div>
+
+                <!--/.container-fluid -->
+
+              </div>
+
+            </nav>
+
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+
+        </header>
+
+      </div>
+
+    </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/international.jpg" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+  <div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text"><div align=center>
+<div class="table">
+
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+         <tr>
+                <td>Volume 1, Issue 1, Year 2013 - Pages 10-18</td>
+                <td align="right"><a href="PDF/002.pdf">View PDF (Full-text)</a></td>
+        </tr>
+         <tr>
+                <td>DOI: 10.11159/vwhci.2013.002</td>
+                <td align="right"><a href="#references">Linked References</a></td>
+        </tr>
+		<tr>
+		<td colspan="2">ISSN: 2368-6103</td>
+		</tr>
+     </table>
+     
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">Developing Wii Balance Games to Increase Balance: A Multi-Disciplinary Approach</p>
+
+<p align="center">
+	<strong>T. Claire Davies<sup>1</sup>, Mark Deacon<sup>1</sup>, Jotinder Singh<sup>1</sup>, Zachary Holly<sup>2</sup>, Lynne Taylor<sup>3</sup>, Sean Mathieson<Sup>4</Sup>, John Parsons<Sup>4</Sup></strong>
+    <br><sup>1</sup>University of Auckland, Mechanical Engineering
+Private Bag 92019, Auckland, 1142, New Zealand<br>
+c.davies@auckland.ac.nz; mdea026@aucklanduni.ac.nz; jsin151@aucklanduni.ac.nz
+<br><sup>2</sup>Massey University, Department of Mechanical Engineering
+Auckland, New Zealand<br>
+zt.holly@gmail.com
+<br><sup>3</sup>University of Auckland, School of Population Health
+Private Bag 92019, Auckland, 1142, New Zealand<br>
+lm.taylor@auckland.ac.nz
+<br><sup>4</sup>University of Auckland, School of Nursing
+Private Bag 92019, Auckland, 1142, New Zealand<br>
+sean.mathieson@auckland.ac.nz; j.parsons@auckland.ac.nz
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p align="justify"><i><strong>Abstract- </strong> Persons older than 75 years of age are more susceptible to falls and are a greater burden to the healthcare system than their younger counterparts. While devices like the Nintendo Wii can potentially increase balance control, virtual reality games available for the Wii are not designed as exercise therapy programmes for older people. Targeted therapies are more likely to increase function and decrease falls risk. An interdisciplinary approach that integrates the knowledge of engineers with clinicians can enable the development of a virtual reality home-based exercise programme with off-the-shelf equipment. Two targeted exercise therapy games have been developed to encourage at home exercise using novel software with Wii balance boards. One requires stability and balance in a standing position, while the other trains stepping reactions. Ethics approval was obtained to evaluate and pilot these games with older participants. These games were shown to be effective during user testing in that five individuals have provided feedback for further improvement and are interested in participating in a longer balance and exercise programme using these games. One participant was also involved in testing the device in his home environment over the course of a few days. Initial testing in the home environment exposed issues that were not present in the laboratory environment which supports the need for user testing at a very early stage in the prototype development.</i></p>
+
+<p align="left"><i><strong>Keywords:</strong></i> Virtual reality, older persons, balance control, physiotherapy, Nintendo Wii. </p>
+
+<p>&nbsp;</p>
+<p align="justify"> &copy; Copyright 2013 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+<p>&nbsp;</p>
+<P>
+Date Received: 2013-09-15  <BR>
+Date Accepted: 2013-11-11 <BR>
+Date Published: 2013-11-18
+</P>
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2>
+
+
+
+<p align="justify" style="text-indent:19.85pt;">Up to 35% of all older people fall every
+year and 68% of fallers sustain an injury with a resultant loss in function and
+independence [1]. Many of these falls are preventable but an engaging, cost
+effective programme of sufficient intensity to safely reinforce balance control
+strategies does not exist. While
+traditional methods of therapy have been shown to be effective, there is often
+a lack of adherence in home-based exercises [2-4]. In an attempt to reduce the
+load on the therapist and provide a more cost-effective means of therapy,
+technologies have been introduced including robotics [5-7] and virtual reality [8-10].
+Rather than undergoing
+robotic therapies in a clinic environment, there has also been promise in the
+areas of gaming and virtual reality with readily available technologies like
+the Wii [10-13], the Sony EyeToy [8, 14-16] and more recently the Xbox Kinect [17].
+These devices have been shown to be safe and feasible for home-based therapy
+treatment, but off-the-shelf systems may not provide enough flexibility to
+allow a therapist to modify the exercise programme if the participant finds the
+exercises too difficult or gains enough confidence to attempt more challenging
+exercises. In addition, the feedback provided may not be sufficient to engage
+the user effectively [6, 18, 19] as the games often provide a score for a
+specific game rather than comparative scores over a given timeframe which shows
+improvement. The benefits of these technologies are that they are inexpensive
+and can be easily implemented in the home environment. If designed effectively
+they are also more enjoyable which may lead to increased adherence.</p>
+
+<p align="justify" style="text-indent:19.85pt;">A
+systematic review conducted by the University of Melbourne [20] found that
+studies to evaluate the benefits of virtual reality and gaming by older people
+are of moderate to low quality. While 17 studies used off-the-shelf technology
+to promote exercise activity in participants over 45 years of age, no studies
+evaluated the effect on activity or participation, and only three showed
+improved balance; each using different outcome measures including the Berg
+Balance Scale, single leg stance on each leg and gait improvement. A more
+recent RCT examining sway during balance has found that exercises with the Sony
+Eye Toy reduces the medial lateral sway length (the direction of sway most
+associated with falls risk)[21]. </p>
+
+<h2>2.     Background</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Up to 35% of all older people (&gt;65
+years) fall every year and 68% of fallers sustain an injury with a resultant
+loss in function and independence [1]. Many falls are preventable. An engaging,
+cost-effective programme of sufficient intensity to safely reinforce balance
+control strategies for older people does not exist. Compared to non-fallers, fallers have
+reduced lower-limb strength, slowed voluntary reaction time, and reduced
+sensory acuity and balance. Exercise programmes have been shown to be effective
+in improving balance and strength, and in reducing the number of falls [22-24].
+But such training protocols are not specific enough to induce adaptations in
+neuromuscular capacities that are required in actual balance-recovery reactions
+(e.g. abilities to recover balance) [25, 26]. Recent studies indicate that
+perturbation-based or multitask balance training have the potential to improve
+these specific capacities because they comply with the principle of training
+specificity [27]. Such findings support the view that training to promote more
+effective change-in-support reactions may help to reduce the risk of falls, and
+hence should be included as part of a falls prevention programme. Targeted
+stepping actions in therapy programmes therefore have the potential to reduce
+the number of falls.  </p>
+
+<p align="justify" style="text-indent:19.85pt;">Evaluating the size of step required to
+recover, it has been found that larger, faster steps increase the ability to
+recover balance [28]. Increasing strength in
+targeted muscle groups has also shown improvements in gait speed, stride
+length, cadence, and clearance [29]. Such findings support the view that training to promote more
+effective change-in-support reactions may help to reduce the risk of falls, and
+hence should be included as part of a falls prevention programme. However, training of
+balance-recovery reactions and stepping in a safe but engaging manner at
+sufficient intensity to have an effect on the older person's balance remain
+problematic.</p>
+
+<h4>2.1 Exercise and Falls</h4>
+
+
+<p align="justify" style="text-indent:19.85pt;">The
+World Report on Disability argues that exercise therapy can improve not only
+functional outcomes across a wide cross section of health conditions, but
+reduce disability in long term care [30]. Physical activity and exercise have the
+potential to slow the development of disability from poor physical function [31].
+</p>
+
+<h4> 2.2. Customising off-the-shelf Technology</h4>
+
+<p align="justify" style="text-indent:19.85pt;">An
+interdisciplinary approach that integrates the knowledge of engineers with
+clinicians can enable the development of a virtual reality home-based exercise
+programme with off-the-shelf equipment. These systems can be modified to record
+the exercise sessions and upload the data to a therapist. As with more
+expensive robotic systems, they can be used to record the number of repetitions
+and degree of difficulty of a given exercise. A therapist can change the goals
+for the patient and observe the patient's adherence from the data recorded. We are
+using an interdisciplinary approach to further develop therapy strategies and
+test outcomes of home therapy with the aid of off-the-shelf technology.</p>
+
+<p align="justify" style="text-indent:19.85pt;">While
+the standard games included with the Wii can be useful for some therapy
+programmes, customised games with low risk perturbation (for example sensory
+vibration by strapping a Wii controller to the leg) developed for older people
+have the potential to be more successful in falls reduction. One benefit of
+customised systems is that only the off-the-shelf sensors are required,
+significantly reducing system costs. For example, balance exercises using the
+Wii balance board or Kinect sensor with customised therapy software can run off
+a home computer with no requirement to buy the entire gaming system. Another
+benefit is the ability to merge several sensors.  </p>
+
+<h2>3.   Designing Therapy Games</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Nintendo's Wii exercises require the
+purchase of a gaming system and balance board (a force platform) at a cost of
+$600 whereas customised therapy software only requires the sensors (balance
+boards at $200) and can be run using a home computer. Other benefits include the ability to merge several sensors
+(multiple balance boards) and the ability to adapt the goals for the
+participant or change the goals as the participant progresses. We developed customised
+software for two games that can be used with Wii balance boards (force platforms developed by Nintendo
+for gaming) and low-risk perturbation (sensory vibration by strapping a Wii
+controller to the leg) [32].</p>
+
+<h4> 3.1 Labyrinth</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Weight shifting exercises have shown that
+balance exercises can improve the strength in the users' ankles, knees, and
+hips (Winter, 1995) and enhance compensatory strategies. A labyrinth game was
+developed that requires the user to shift their centre of pressure (on the
+balance board) to manoeuvre a ball into a hole (on a screen).  There are three
+main components viewed on the screen by the user while balancing on the Wii
+board; the table, the ball and the hole (Figure 1). The table was designed to
+tilt in the direction of the user's COP. The tilt angle was dependent on the
+distance of the COP from the centre of the board. The ball rolls in the
+direction that the table is tilted towards and its magnitude is relative to the
+angle of the tilt. The velocity of the ball is determined by the displacement of the
+centre of pressure (COP) from the centre of the balance board. The farther the
+user shifts their COP, the faster the ball will travel. The direction that the
+ball travels is also determined by the direction that the COP is displaced from
+the centre of the board.The aim of the
+game is for the user to shift their weight to move the pink ball across the
+green table into the black hole, while avoiding the white holes (Figure 2).</p>
+
+<figure>
+<img src="002_files/image001.jpg" class="img"/>
+
+<figcaption>
+Figure 1. Labyrinth game interface.</figcaption>
+</figure>
+<br>
+
+
+
+<figure>
+<img src="002_files/image002.jpg" class="img"/>
+
+<figcaption>
+Figure 2. User evaluating Labyrinth Game to train stationary
+balance.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">The game time, best time, total time, and
+the score are displayed to the user. Game time is the time to reach the target
+hole in the previous trial, while the best time is the fastest time achieved
+over the course of the current game. The users can compare the most recent
+attempt to the best time as a means to motivate the user to continue. The total
+time is the time over which the participant has been playing. The score is a
+result of the inverse time to reach the target and extra points if the hole is
+sunk in the target hole without the ball touching the edge of the table. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Effort can be
+adjusted by changing the difficulty level, the ball size or by adjusting the number
+of deceptive holes. Increasing the difficulty level of the game causes the
+speed of the ball to increase. The size of the ball can be changed, with the size
+of the holes adjusting by the same factor; the larger the target, the greater
+the tolerance for error. Lastly, by adjusting the number of deceptive holes the
+user is required to be more controlled while shifting their weight to
+manipulate the ball into the target hole. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Once the ball sinks into the black hole,
+the table is reset with the ball back at its initial position; the middle of
+the table. The black hole changes its position to a new random position on the
+table. If the ball reaches an edge, it can only move along that edge until the
+user tilts the table away from that edge. The ball is not allowed to leave the
+table. </p>
+
+<p align="justify" style="text-indent:19.85pt;">The game was designed with the target
+audience in mind. It was kept simple so that the user isn't distracted from the
+task. The colour scheme was chosen so that there would be no confusion and all
+the main components would stand out (but the therapist has flexibility to
+change the colours). We used contrasting colours for the table and ball. </p>
+
+
+<h4> 3.1 Stepping Game</h4>
+
+<p align="justify" style="text-indent:19.85pt;">With the labyrinth game
+focussing on improving a person's strength and ability to maintain balance, we
+wanted to create a game that could safely simulate a situation if a person is unable
+to keep their centre of pressure and centre of mass in equilibrium. In other
+words, we wanted to create an exercise that trains people's third strategy to
+prevent falling, that of stepping. </p>
+
+<p align="justify" style="text-indent:19.85pt;">To design this game we used
+two balance boards positioned one in front of the other (Figure 3). The participant must stand on the back
+board (bottom in the image) and aim to hit the yellow target area on the other
+board with the foot shown on the side of the screen (in this case, the right
+foot).  If the task is done correctly, the target will turn green. If the
+incorrect foot is used, the system alerts the user to the other foot and the
+user must step back on to the first board and try again. The user must
+correctly step before the system allows them to pass to the next trial. During
+this time, the system measures and saves the data from the reaction time (time
+to initial movement), the time for the movement, the amount of weight
+transferred when stepping as well as the size of step. Both the size and the
+location of the target can be randomised as can the amount of weight required
+to be shifted to the target location for successful task completion.</p>
+
+<figure>
+<img src="002_files/image003.jpg" class="img"/>
+
+<figcaption>
+Figure 3. Game to encourage stepping toward a target.
+a) Shows the interface with the red dots indicating the centre of pressure and the yellow block as the target.
+b)  Shows the participant stepping towards the yellow target.</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">An added feature of the game was to
+evaluate different sensory cues (as one would with a sensory organisation
+test).  Vibrational cues could be provided using a Wiimote strapped to each leg
+and the rumble functionality. This would provide information about whether an
+individual responded more quickly to a tactile input as compared to a visual
+input.  Four methods were evaluated including visual cues only, visual cue
+before vibration, visual cue after vibration, or presentation of both sensory
+inputs simultaneously.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Ethics
+approval from the University of Auckland Human Participant Ethics Committee was
+obtained to evaluate the games with older participants (&gt;80 years). Usability
+questionnaires were completed by all the participants [33] and they ranked the
+amount of physical exertion for each game using the Borg Scale of Perceived Exertion.
+</p>
+
+<h2>4.   Results</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Five individuals (mean
+average age = 81 yrs [standard deviation= 4 yrs], female [n=2], required
+walking aids for mobilising on level ground [n=1]) were involved in the initial
+pilot test. All participants needed assistance stepping onto the balance boards
+at the start of each game and one participant required additional support while
+playing the games. One participant used a walking stick for added stability;
+the use of the walking stick may have affected the results measured by the
+balance boards. Responses to
+questionnaires suggest that these games are engaging, particularly the continuous
+feedback of success (Figure 4).  </p>
+
+<figure>
+<img src="002_files/image004.jpg" class="img"/>
+
+<figcaption>
+Figure 4 . Results from user questionnaires.</figcaption>
+</figure>
+<br>
+
+<h4>4.1 Labyrinth </h4>
+
+<p align="justify" style="text-indent:19.85pt;">Participants found the
+labyrinth game easy to understand and very usable. Interestingly, when the ball
+moved more slowly (the lower difficulty level), participants argued that the
+game was more difficult as they had to maintain a specific body position for a
+longer period of time. A slightly higher difficulty level allowed them to feel
+more comfortable. The participants quickly became bored with only one deceptive
+hole and requested additional holes to make the game more challenging. All the
+participants said they enjoyed it. They did not show any interest in changing
+the colour scheme or ball size or any of the aesthetic aspects of the game.</p>
+
+<p align="justify" style="text-indent:19.85pt;">We found that
+some participants would use their arms and full body motions to change the
+centre of pressure. This suggests that the participants were no longer focusing
+on the balance itself, rather engaging in the game and using whatever
+strategies they could to succeed at the game. This will likely to lead to
+improved adherence.</p>
+
+<h4>4.2 Stepping Game</h4>
+
+<p align="justify" style="text-indent:19.85pt;">Participants exhibited multiple
+mistakes while playing the stepping game. A training session of several "trial
+runs" was permitted for the stepping game.  During these, the participant would
+often step forward with the wrong foot, step forward with both feet to attempt
+to get their COP on the target or dragged their foot across to get the target.
+During the test stage, fewer issues were present, though they did still exist.</p>
+
+<p align="justify" style="text-indent:19.85pt;">Participants had difficulty stepping when
+the target was closer to the middle of the top balance board. It is known to be
+more difficult to maintain balance in tandem stance (one foot in front of the
+other) and the participants did not feel as confident exposing themselves to
+the risk. The participants also found it hard to relate the image of the top
+balance board on the screen with the actual balance board in front of them.
+When a target appeared on the screen with the foot indicators, the participants
+understood which foot to use but did not pay much attention to the location of
+the target. If the left foot was indicated, the participant would step onto the
+left part of the board. If the target was instead located closer to the middle,
+they had to be reminded that a step in the centre was required.  Some stepped
+on with their other foot while some dragged their foot across the board,
+causing difficulty for the measurement system.</p>
+
+<p align="justify" style="text-indent:19.85pt;">When different sensory inputs were
+introduced, the participants had difficulty responding to the vibration.  A
+plot of the results for all participants is shown in Figure 5.  The reaction
+time was less variable when presented with only the visual cue, though the
+average reaction time was similar among the visual cue only, the visual cue
+first, or the visual cue at the same time as the vibration.  When presented
+with the vibration first, most participants appeared to wait until the visual
+cue was also given before making the step. This suggests that the use of
+vibration, at least using the rumble feature of the Wiimote, does not provide
+useful information to the user.  Based on this test, it was decided that the
+rumble feature would not be used in therapy protocols for the stepping game. </p>
+
+<h4> 4.3 General Comments from Initial Pilot Testing</h4>
+
+
+<p align="justify" style="text-indent:19.85pt;">All participants
+agreed that they could see themselves using this system in the future and
+believed that they would benefit from playing this game for balance
+rehabilitation. All participants agreed that the stepping game was more
+engaging than typical occupational therapy/physical therapy (OT/PT) that they
+had done before and believed that both games were as strenuous as typical OT/PT
+they had done previously. In general, the participants found the stepping game
+harder to understand and more frustrating to play then that labyrinth game. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Participants were given a
+freeform section of the questionnaire to put their comments and included: </p>
+
+<p align="justify" style="text-indent:30pt;">"Enjoyed it once
+[I] got the idea" </p>
+
+<p align="justify" style="text-indent:30pt;">"Once I got used
+to this game, very comfortable" </p>
+
+<p align="justify" style="text-indent:19.85pt;">Two of the participants gave
+feedback on how the system could be improved: </p>
+
+<p align="justify" style="text-indent:30pt;">"Sometimes slow in
+indicating which foot" </p>
+
+<p align="justify" style="text-indent:30pt;">"Pads a bit wider apart
+for me"</p>
+
+<p align="justify" style="text-indent:19.85pt;">The ranking on the
+Borg Scale suggested that the Labyrinth game required more exertion than the
+stepping game (10.3 versus 9.5 relating to 50%-55% effort), though both
+required a fairly light effort.</p>
+
+<figure>
+<img src="002_files/image005.gif" class="img"/>
+
+<figcaption>
+Figure 5. Reaction time for each sensory cue based on all participants.The red line within the box represents the median reaction time with the box extending from the 25th to 75th percentiles. The whiskers extend to the extreme points within the range, with the red crosses representing outlier trials.</figcaption>
+</figure>
+<br>
+
+<h4> 4.4 Comments from the Physiotherapists<</h4>
+
+
+<p align="justify" style="text-indent:19.85pt;">The physiotherapists were also given the
+opportunity to provide feedback after the session by completing a usability
+questionnaire. The purpose of this questionnaire was to gain feedback, from a
+physiotherapist's point of view, about the potential for this system and
+further recommended developments.</p>
+
+<p align="justify" style="text-indent:19.85pt;">When
+commenting on the appropriateness of the games:</p>
+
+<p align="justify" style="text-indent:30pt;">"[The
+labyrinth game] focused on dynamic balance with ankle, knee and hip strategies
+used by participants. I think it was at an appropriate level and was suitably
+challenging." </p>
+
+<p align="justify" style="text-indent:30pt;">"[The Stepping
+game] looked at stepping reaction training; it was very effective for this." </p>
+
+<p align="justify" style="text-indent:30pt;">"[The Stepping game] fills a big gap"</p>
+
+<p align="justify" style="text-indent:19.85pt;">When compared to other systems:</p>
+
+<p align="justify" style="text-indent:30pt;">"Very
+good - portability, cost, usability. I would use it for sure in treating
+balance issues for a wide variety of conditions." </p>
+
+<p align="justify" style="text-indent:30pt;">"It's great – I
+love it. I can definitely see it being very useful in clinical practice" </p>
+
+<p align="justify" style="text-indent:19.85pt;"> Areas
+for improvement:</p>
+
+<p align="justify" style="text-indent:30pt;">"stepping game needs more emphasis on quick
+steps" and noted that </p>
+
+<p align="justify" style="text-indent:30pt;">"the vibration feature didn't work so well"</p>
+
+<p align="justify" style="text-indent:30pt;">"need feedback in real time"
+and perhaps "using the score to complete a task, cumulative scores filling a
+cup of tea".</p>
+
+<p align="justify" style="text-indent:19.85pt;">These
+comments were used in the next iteration of the design before the following
+test occurred.</p>
+
+
+<H4> 4.5 Testing in the Home Environment</H4>
+
+<p align="justify" style="text-indent:19.85pt;">One
+participant was given the device to test at home for a week. This testing gave
+specific insight into implementation difficulties within the home. Two issues
+were observed: the
+user found it difficult to change of the target size in an attempt to increase
+difficulty, while the second related to an error message regarding the laptop
+power source which could not be overcome. The participant did not call for
+assistance, reporting that it seemed so trivial that he did not want to be a
+bother. This supports the need for the system to be extremely stable if it is
+to be used in a home environment. It suggests the need for interim follow-up
+calls to the participant to ensure that there are no unanticipated problems. It
+also suggests that the user needs to be comfortable with being able to contact
+the therapist or technician at any time there is a problem, regardless of the
+apparently trivial nature of the problem.  </p>
+
+<p align="justify" style="text-indent:19.85pt;">The laptop issue arose after the participant's
+first game and stopped any further attempts. Although we hoped to get more
+attempts out of this home trial, we were able to get feedback from the one
+attempt that was made. Compared to this user's initial questionnaire, there
+were notable changes in the one that followed. Five of the questions to which
+he had previous answered "Strongly agree" were now reported as "Agree". These
+responses in the tester's questionnaire appear to be less enthusiastic than the
+previous results. This could be due to the failure of the system. The tester's
+Borg scale showed no change at 11, 60% effort (Fairly light). </p>
+
+<H2>5.   Discussion</H2>
+
+<p align="justify" style="text-indent:19.85pt;">Device development that includes user
+input is essential to ensure increased usability and acceptance.  Although
+iterative design including the users engages them and results in a better
+product, there are often obstacles along the way.  Additionally, the process
+continues to require iteration to smooth out issues that therapists continue to
+experience. The design process is never complete and future developments are
+presented below.</p>
+
+
+<H4>5.1 Obstacles </H4>
+
+<p align="justify" style="text-indent:19.85pt;">Several obstacles were faced - throughout
+the development of the system. The first was the difficulty in establishing a
+permanent Bluetooth connection between the balance boards and computer. While
+this was not insurmountable, careful programming and an understanding of how
+the proprietary software functioned was important to understand. In addition,
+small bugs within the program itself arose during the development of the system. 
+These issues were likely due to the fact that  three people with different
+styles of notation worked together on the one program at different times. Other
+issues included analysis problems when the user stepped in a way that had not
+been anticipated.  For example, if a user stepped to the edge of the board, the
+full weight was not recorded and the program had difficulty recognizing what
+had occurred.  These issues were only apparent while analyzing the raw data gathered
+during pilot testing. These were only identified as a result of having the
+actual user population (older people) conducting the testing..</p>
+
+<h4> 5.2 Advantages/Disadvantages</h4>
+
+<p align="justify" style="text-indent:19.85pt;">In addition to obstacles identified in
+the development phases, physiotherapists also commented on the pros and cons of
+the system.  For example, the therapists were impressed that the program
+required actions appropriate for balance rehabilitation using low cost
+technology. By providing therapists and users with information based on their performance,
+the opportunity arises to closely monitor and quantify improvements over time. However,
+raw data collected while playing the labyrinth game is difficult to quantify
+and use to monitor performance due to the random positioning of the targets and
+obstacles, as well as the many ways the user can manipulate their center of
+pressure to reach any given target. </p>
+
+<h4> 5.3 Future Developments</h4>
+
+
+<p align="justify" style="text-indent:19.85pt;">The recommendations of the users and the
+therapists have been incorporated into the system. Future development will
+continue the iterative design process, working closely with therapists and
+older persons who would be potential users of the system. This includes
+development of a stand-alone setup to run the system for improved usability
+(without the need to have a dedicated computer for running the software).
+Overall improvements are also required to ensure both the system and data
+analysis process are robust. Finally, we will look to perform rigorous testing
+of the system to investigate its capability as both a measurement tool and
+therapy tool for balance in older persons.</p>
+
+<h2>6.   Conclusions</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Two games were developed using Wii
+balance boards for balance training. These games were shown to be effective
+during user testing, though it is important to have a therapist or technician
+present during initial use to explain the game (future initial interfaces will
+be designed to be more usable).  Initial testing in the home environment
+exposed issues that were not present in the laboratory environment which
+supports the need for user testing at a very early stage in the prototype
+development. Future work will focus on making the interface more usable and the
+games more challenging.</p>
+
+
+<h2>Acknowledgements</h2>
+
+<p align="justify" style="text-indent:19.85pt;">We'd to thank all the participants who
+offered their time and suggestions for improvement.</p>
+
+
+
+<img src="images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+<p>[1]	 J. Stevens, P.S. Corso, E.A. Finkelstein, "The costs of fatal and non-fatal falls among older adults." Injury Prevention, 2006. 12(5): p. 290-5.  <a href="http://dx.doi.org/10.1136/ip.2005.011015" target="_blank">View Article</a></p>
+
+<p>[2]	 K.K. Miller, "Adherence with home exercise programs 1-6 months after discharge from physical therapy by individuals post-stroke", in School of Health and Rehabilitation Sciences. 2011, Indiana University. p. 56.  <a href="https://scholarworks.iupui.edu/bitstream/handle/1805/1693/KMiller%20Thesis.pdf " target="_blank">View Article</a></p>
+
+
+<p>[3]	 J.H. Rimmer, E. Wang, and D. Smith, "Barriers associated with exercise and community access for individuals with stroke." Journal of Rehabilitation Research & Development, 2008. 45(2): p. 315-22.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/18566948" target="_blank">View Article</a></p>
+
+
+<p>[4]	J.S. Schneider, "Evaluating exercise adherence: a solution focused approach", in Psychology. 2011, California State University: Chico. p. 55.  <a href="http://hdl.handle.net/10211.4/338 " target="_blank">View Article</a></p>
+
+
+<p>[5]	A.C. Lo, P.D. Guarino, L.G. Richards, J.K. Haselkorn, G.F. Wittenberg, D.G. Federman, R.J. Ringer, T.H. Wagner, H.I. Krebs, B.T. Volpe, C.T. Bever Jr., D.M. Bravata, P.W. Duncan, B.H. Corn, A.D. Maffucci, S.E. Nadeai, S.S. Conroy, J.M. Powell, G.D. Huang, P. Peduzzi, "Robot-Assisted Therapy for Long-Term Upper-Limb Impairment after Stroke". New England Journal of Medicine, 2010. 362(19): p. 1772-1783.  <a href="http://dx.doi.org/10.1056/NEJMoa0911341 " target="_blank">View Article</a></p>
+
+<p>[6]	S. Brochard, J. Robertson, B. Médée, O. Rémy-Néris, "What's new in new technologies for upper extremity rehabilitation?" Current Opinion in Neurology. 23(6): p. 683-687  <a href="http://dx.doi.org/10.1097/WCO.0b013e32833f61ce" target="_blank">View Article</a></p>
+
+<p>[7]	O. Peter. G. Fazekas, K. Zsiga, Z. Denes, "Robot-mediated upper limb physiotherapy: review and recommendations for future clinical trials." International Journal of Rehabilitation Research, 2011. 34(3): p. 196-202.  <a href="http://dx.doi.org/10.1097/MRR.0b013e328346e8ad" target="_blank">View Article</a></p>
+
+<p>[8]	 S. Flynn, P. Palma, and A. Bender, "Feasibility of using the Sony PlayStation 2 gaming platform for an individual poststroke: a case report." Journal of Neurol Phys Ther, 2007. 31(4): p. 180-9.  <a href="http://dx.doi.org/10.1097/NPT.0b013e31815d00d5" target="_blank">View Article</a></p>
+
+<p>[9]	 A. Henderson, N. Korner-Bitensky, and M. Levin, "Virtual Reality in Stroke Rehabilitation: A Systematic Review of its Effectiveness for Upper Limb Motor Recovery." Topics in Stroke Rehabilitation, 2007. 14(2): p. 52-61. <a href="http://www.ncbi.nlm.nih.gov/pubmed/17517575 " target="_blank">View Article</a></p>
+
+<p>[10]	M. R. Mouawad, C.G. Doust, M.D. Max, P. A. McNulty,"Wii-based movement therapy to promote improved upper extremity function post-stroke: a pilot study." Journal of Rehabil Med. 43(6): p. 527-33 <a href="http://dx.doi.org/10.2340/16501977-0816 " target="_blank">View Article</a></p>
+
+<p>[11]	G. Saposnik, R. Teasell, M. Marmdani, J. Hall, W. McIlroy, D. Cheung, K.E. Thorpe, L.G. Cohen, M. Baylet,"Effectiveness of Virtual Reality Using Wii Gaming Technology in Stroke Rehabilitation." Stroke. 41(7): p. 1477-1484. <a href="http://dx.doi.org/10.1161/STROKEAHA.110.584979" target="_blank">View Article</a></p>
+
+<p>[12]	J.K. Hsu, R. Thibodeau, S.J. Wong, D. Zukiwsky, S. Cecile, D. M. Walkton,  "A "Wii" bit of fun: the effects of adding Nintendo Wii((R)) Bowling to a standard exercise regimen for residents of long-term care with upper extremity dysfunction." Physiother Theory Pract. 27(3): p. 185-93.  <a href="http://dx.doi.org/10.3109/09593985.2010.483267" target="_blank">View Article</a></p>
+
+<p>[13]	L. Yong Joo, T. Soon Yin, D. Xu, E. Thia, C. Pei Fen, C.W. Kuah, K.H. Kong,"A feasibility study using interactive commercial off-the-shelf computer gaming in upper limb rehabilitation in patients after stroke." Journal of Rehabil Med. 42(5): p. 437-41.  <a href="http://dx.doi.org/10.2340/16501977-0528 " target="_blank">View Article</a></p>
+
+<p>[14]	G. Yavuzer, A. Senel, M. B. Atay, H. J. Stam, "''Playstation eyetoy games'' improve upper extremity-related motor functioning in subacute stroke: a randomized controlled clinical trial." European Journal Phys Rehabil Med, 2008. 44(3): p. 237-44.   <a href="http://www.ncbi.nlm.nih.gov/pubmed/18469735 " target="_blank">View Article</a></p>
+
+<p>[15]	M. Sandlund, E.L. Waterworth, and C. Hager, "Using motion interactive games to promote physical activity and enhance motor performance in children with cerebral palsy." Dev Neurorehabil. 14(1): p. 15-21. <a href="http://dx.doi.org/10.3109/17518423.2010.533329" target="_blank">View Article</a></p>
+
+<p>[16]	D. Rand, R. Kizony, and P.T. Weiss, "The Sony PlayStation II EyeToy: low-cost virtual reality for use in rehabilitation." J Neurol Phys Ther, 2008. 32(4): p. 155-63. <a href="http://dx.doi.org/10.1097/NPT.0b013e31818ee779 " target="_blank">View Article</a></p>
+
+<p>[17]	L.M. Taylor, R. Maddison, L.A. Pfaeffli, J.C. Rawtorn, N. Gant, N.M. Kerse, "Activity and Energy Expenditure in Older People Playing Active Video Games." Arch Phys Med Rehabil, 2012, 93, (12): p. 2281-2286.   <a href="http://dx.doi.org/10.1016/j.apmr.2012.03.034" target="_blank">View Article</a></p>
+
+<p>[18]	K.M. Gerling, J. Schild, and M. Masuch, "Exergame design for elderly users: the case study of SilverBalance," in Proceedings of the 7th International Conference on Advances in Computer Entertainment Technology. 2010, ACM: Taipei, Taiwan. p. 66-69. <a href="http://dx.doi.org/10.1145/1971630.1971650 " target="_blank">View Article</a></p>
+
+<p>[19]	N. Mumford and P.H. Wilson,"Virtual reality in acquired brain injury upper limb rehabilitation: Evidence-based evaluation of clinical research." Brain Injury, 2009. 23(3): p. 179-191. <a href="http://dx.doi.org/10.1080/02699050802695566 " target="_blank">View Article</a></p>
+
+<p>[20]	M. Morris, E. Ozanne, K. Miller, N. Santamaria, A. Pearce, C. Said, B. Adari, "Smart technologies for older people: a systematic literature review of smart technologies that promote health and wellbeing of older people living at home." 2012, Institute for a Broadband-Enabled Society, The University of Melbourne: Melbourne.  <a href="http://broadband.unimelb.edu.au/resources/Smart-technologies-for-older-people.pdf " target="_blank">View Article</a></p>
+
+<p>[21]	C.H. Song, J.S. Petrofsky, S.W. Lee, K. J. Lee, J. E. Yim, "Effects of an exercise program on balance and trunk proprioception in older adults with diabetic neuropathies." Diabetes Technol Ther, 2011. 13(8): p. 803-11.  <a href="http://dx.doi.org/10.1089/dia.2011.0036" target="_blank">View Article</a></p>
+
+<p>[22]	D.M. Buchner, M.E. Cress, B.J. de Lateur, P.C. Esselman, A.J. Margherita, R. Price, E. H. Wagner "The effect of strength and endurance training on gait, balance, fall risk, and health services use in community-living older adults." J Gerontol A Biol Sci Med Sci, 1997. 52(4): p. M218-24.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/9224433 " target="_blank">View Article</a></p>
+
+<p>[23]	M.M. Gardner, M.C. Robertson, R. McGee, A.J. Campbell, "Application of a falls prevention program for older people to primary health care practice." Preventive Medicine, 2002. 34(5): p. 546-553.  <a href="http://dx.doi.org/10.1006/pmed.2002.1017 " target="_blank">View Article</a></p>
+
+<p>[24]	S.R. Lord, S. Castell, J. Corcoran, J. Dayhew, B. Matters, A. Shan, P. Williams, "The effect of group exercise on physical functioning and falls in frail older people living in retirement villages: a randomized, controlled trial." J Am Geriatr Soc, 2003. 51(12): p. 1685-92. <a href="http://dx.doi.org/10.1046/j.1532-5415.2003.51551.x " target="_blank">View Article</a></p>
+
+
+<p>[25]	U. Granacher, T. Muehlbauer, L. Zahner, A. Hollhofer, R.W. Kressig, "Comparison of Traditional and Recent Approaches in the Promotion of Balance and Strength in Older Adults." Sports medicine, 2011. 41(5): p. 377-400 <a href="http://dx.doi.org/ 10.2165/11539920-000000000-00000" target="_blank">View Article</a></p>
+
+<p>[26]	B.E.  Maki and W.E. McIlroy, "Control of rapid limb movements for balance recovery: age-related changes and implications for fall prevention." Age and Ageing, 2006. 35(suppl 2): p. ii12. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16926197" target="_blank">View Article</a></p>
+
+
+<p>[27]	A. Mansfield, A.L. Peters, B.A. Liu, B.E. Maki, "Effect of a perturbation-based balance training program on compensatory stepping and grasping reactions in older adults: a randomized controlled trial." Physical Therapy, 2010. 90(4): p. 476. <a href="http://dx.doi.org/10.2522/ptj.20090070" target="_blank">View Article</a></p>
+
+<p>[28]	E.T.  Hsiao-Wecksler, and S.N. Robinovitch, "The effect of step length on young and elderly women's ability to recover balance." Clinical Biomechanics, 2007. 22(5): p. 574-580. <a href="http://dx.doi.org/10.1016/j.clinbiomech.2007.01.013 " target="_blank">View Article</a></p>
+
+
+<p>[29]	L.N. Persch, C. Ugrinowitsch, G. Pereira, A.L. Rodacki, "Strength training improves fall-related gait kinematics in the elderly: A randomized controlled trial." Clinical Biomechanics, 2009. 24(10): p. 819-825. <a href="http://dx.doi.org/10.1016/j.clinbiomech.2009.07.012 " target="_blank">View Article</a></p>
+
+<p>[30]	World Health Organization, World Report on Disability 2011. 2011.  <a href="http://www.who.int/disabilities/world_report/2011/easyread.pdf " target="_blank">View Article</a></p>
+
+
+<p>[31]	T.M. Gill, D.I. Baker, M. Gottschalk, P.N. Peduzzi, H. Allore and A. Byers, "A program to prevent functional decline in physically frail, elderly persons who live at home." New England Journal of Medicine, 2002. 347(14): p. 1068-74.  <a href="http://dx.doi.org/10.1056/NEJMoa020423 " target="_blank">View Article</a></p>
+
+<p>[32]	M.  Deacon, J. Singh, "Using off-the-shelf technology for balance rehabilitation," in Fourth Year Projects. 2012, University of Auckland: Auckland. </p>
+
+
+<p>[33]	B. Lange, S. Flyyn, R. Proffitt, C.Y. Chang, A.S. Rizzo, "Development of an interactive game-based rehabilitation tool for dynamic balance training." Top Stroke Rehabil, 2010. 17(5): p. 345-52. <a href="http://dx.doi.org/10.1310/tsr1705-345" target="_blank">View Article</a></p>
+
+
+
+
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+        <p><a href="http://avestia.com">Avestia Publishing</a></p>
+        <p><a href="../register/">Subscribe to our Mailing List</a></p>
+        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
+        <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+      </div>
+      <div class="col-sm-5 footer-txt">
+        <p>Avestia Publishing, International ASET Inc. </p>
+        <p>Unit No. 417, 1376 Bank St. </p>
+        <p>Ottawa, Ontario, Canada </p>
+        <p>Postal Code: K1H 7Y3</p>
+        <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

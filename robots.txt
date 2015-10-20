@@ -1,0 +1,3 @@
+Sitemap: http://www.vwhci.avestia.com/sitemap.xml
+
+User-agent: *
