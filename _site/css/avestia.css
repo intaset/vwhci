@@ -401,13 +401,15 @@ font-size: 1em;
 margin: 0;
 }
 
-.body-link {
+.body-link,
+.ref a {
 color: #47A4AD;
 text-decoration: none;
 transition: all 0.8s linear;
 }
 
-.body-link:hover {
+.body-link:hover,
+.ref a:hover {
 color: #F48120;
 }
 
@@ -1648,7 +1650,7 @@ footer .grid {
     background-color: #F48120;
   }
 
-  .j-header-article h1 {
+  .j-header-article .name h1 {
     font-size: 1.25em!important;
     padding: 0;
     display: inline-block;
@@ -1696,9 +1698,14 @@ footer .grid {
   }
 
   nav#slide-menu {
-    right: -300px;
+    right: 0px;
     max-width: 300px;
+    display: none;
   }
+  body.menu-active nav#slide-menu {
+    right: 0px;
+    display: block;
+}
 
   #slide-menu a {
     font-size: 1em;
@@ -1821,30 +1828,61 @@ footer {
 h2 {
   font-size: 1.5em;
   }
-
-  .name {
-    padding: 2em;
+  .j-header {
+        background: url(../img/journals/j-vwhci.jpg) center;
+    width: 65%;
+    min-height: 370px;
+    background-size: cover;
+    float: right;
   }
-
-  .j-header h1 {
-    font-size: 1.2em!important;
+  .name h1 {
+    font-size: 1.5em!important;
     padding: 0;
-    width: 100%
+    width: 100%;
+    color: #fecca9;
+    font-weight: 600;
+    text-transform: inherit;
+    padding: 0;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: top;
   }
   .name .body {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
   }
   .j-oa {
     display: inline-block;
     width: 80%;
-    padding-top: 1em;
-    max-width: 280px;
+    max-width: 180px;
   }
   .oalink {
-    width: 100%;
-    display: block;
-    text-align: left;
+    width: 47%;
+    display: inline-block;
+    text-align: right;
   }
+  .name {
+    width: 35%;
+    padding: 2em;
+    min-height: 370px;
+    position: relative;
+    background-color: #F48120;
+}
+.issn {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+    padding: 0 4em 0 0;
+}
+
+.j-img {
+    display: none;
+}
+.jhead {
+    padding-bottom: 370px;
+}
 .topics {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
@@ -1863,13 +1901,6 @@ h2 {
 }
 .j-home {
   padding: 2em;
-}
-.name {
-    width: 35%;
-}
-
-.j-img {
-    width: 65%;
 }
 .m-recent .border {
   border: 0;
@@ -1893,14 +1924,14 @@ h2 {
 }
 
 /* 768PX - 881 PX */
-@media only screen and (min-width: 25.8em) and (max-width: 55.06em) {
+@media only screen and (min-width: 25.8em) and (max-width: 55.1em) {
 .j-link {
     font-size: 0.9em;
 }
 }
 
 /* 881 PX */
-@media only screen and (min-width: 55.06em) {
+@media only screen and (min-width: 55.1em) {
   .cbp-af-header nav a {
     padding: 0 1em!important;
   }
@@ -1965,9 +1996,15 @@ h2 {
 .subscribe #email {
     width: 69%;
 }
-.j-header h1 {
+.name h1 {
     font-size: 2em!important;
 }
+.name .body {
+    font-size: 1.2em;
+  }
+  .oalink {
+    width: 48%;
+  }
 }
 
 /* 1200 PX */
@@ -2024,25 +2061,30 @@ h2 {
 .name {
     padding: 3em;
 }
+.issn {
+        padding: 0px 6em 0 0;
+        bottom: 49px;
+}
 }
 
 /* 1300 PX */
 @media only screen and (min-width: 81em) {
   .j-header {
-    background-color: #F48120;
     min-height: 430px;
-    background: url(../img/journals/j-vwhci.jpg) center center;
     background-size: cover;
   }
   .name {
-    width: 35%;
-    float: none; 
-    background-color: #F48120;
     min-height: 430px;
   }
   .j-img {
     display: none;
   }
+.name .body {
+    font-size: 1.4em;
+}
+.jhead {
+    padding-bottom: 430px;
+}
 }
 
 
@@ -2057,9 +2099,6 @@ h2 {
 }
 .journals div {
     margin: 4.2px;
-}
-.j-oa {
-    padding-top: 2em;
 }
 }
 

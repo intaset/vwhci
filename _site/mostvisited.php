@@ -1,6 +1,6 @@
 <?php
 
-$file = 'mostvisitedExt.txt';
+$file = 'mostvisited.txt';
 
 
 $homepage = file_get_contents('https://ijvwhcimostvisitedpapers.appspot.com/query?id=ahpzfmlqdndoY2ltb3N0dmlzaXRlZHBhcGVyc3IVCxIIQXBpUXVlcnkYgICAgICAgAoM');
@@ -37,11 +37,14 @@ $counter = 0;
 
 for ($i=2;$i<sizeof($arr);$i++){
 
-	if ($arr[$i]=='-' and $arr[$i-7]=='"' and $arr[$i-9]==',' and $arr[$i-10]=='"' and $counter != 5){
+	if ($arr[$i]=='"' and $arr[$i-1]==' ' and $arr[$i-2]==',' and $arr[$i-3]=='"' and $arr[$i-4]=='l' and $counter != 5){
 
-    	while ($arr[$i+2]!= ',' or $arr[$i+1]!= '"'){
-
-       		$arrTitle[$i] = $arr[$i+2];
+    	while ($arr[$i+1]!= ',' or $arr[$i]!= '"'){
+			if($arr[$i+1]== '"'){
+				$arrTitle[$i] = ' - ';
+			}else{
+				$arrTitle[$i] = $arr[$i+1];
+			}
 
             $i++;
 
@@ -71,7 +74,7 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[0] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+			$authorInfo =  $authorInfo . $row['link'] . ' - ' . $row['authors'] . ' - ';
 		}
 	}
 }
@@ -82,7 +85,7 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[1] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+			$authorInfo =  $authorInfo . $row['link'] . ' - ' . $row['authors'] . ' - ';
 		}
 	}
 }
@@ -93,7 +96,7 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[2] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+			$authorInfo =  $authorInfo . $row['link'] . ' - ' . $row['authors'] . ' - ';
 		}
 	}
 }
@@ -104,7 +107,7 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[3] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+			$authorInfo =  $authorInfo . $row['link'] . ' - ' . $row['authors'] . ' - ';
 		}
 	}
 }
@@ -115,7 +118,7 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[4] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+			$authorInfo =  $authorInfo . $row['link'] . ' - ' . $row['authors'] . ' - ';
 		}
 	}
 }
