@@ -123,22 +123,24 @@ mail($my_email,$subject,$message,$headers);
 <meta name="robots" content="noarchive">
 <meta name="description" content="{{page.meta}}">
 <meta name="keywords" content="{{page.keyword}}">
-<title>Avestia Publishing - Thank You</title>
+<title>VWHCI - Contact Us</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="css/avestia.css" rel="stylesheet">
+<link href="../css/avestia.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
 <!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<script src="js/modernizr.custom.63321.js"></script>
+<script src="../js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="mostvisited.js"></script> 
+<script type="text/javascript" src="mostvisitedExt.js"></script> 
 <script>
   (function() {
-    var cx = '016656741306535874023:f_iiykae6ri';
+    var cx = '016656741306535874023:0t4fpzqx9s8';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -149,106 +151,159 @@ mail($my_email,$subject,$message,$headers);
   })();
 </script>
 </head>
-
 <body class="loading">
 <nav id="slide-menu">
   <h1>Avestia Publishing</h1>
   <ul>
-    <li><a href="about">About Us</a></li>
-    <li><a href="ethics">Ethics in Publishing</a></li>
-    <li><a href="openaccess">Open Access</a></li>
-    <li><a href="editor">Become a Reviewer or an Editor</a></li>
-    <li><a href="publishing">Your Publishing Needs</a></li>
-    <li><a href="proceedings">Conference Proceedings</a></li>
-    <li><a href="news">Latest News</a></li>
-    <li><a href="guidelines">Author Guidelines</a></li>
-    <li><a href="journals">Journals</a></li>
+    <li><a href="http://avestia.com/about">About Us</a></li>
+    <li><a href="http://avestia.com/ethics">Ethics in Publishing</a></li>
+    <li><a href="http://avestia.com/openaccess">Open Access</a></li>
+    <li><a href="http://avestia.com/editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="http://avestia.com/publishing">Your Publishing Needs</a></li>
+    <li><a href="http://avestia.com/proceedings">Conference Proceedings</a></li>
+    <li><a href="http://avestia.com/news">Latest News</a></li>
+    <li><a href="http://avestia.com/guidelines">Author Guidelines</a></li>
+    <li><a href="http://avestia.com/journals">Journals</a></li>
     <li><a href="http://amss.avestia.com/">Submission</a></li>
-    <li><a href="copyright">Copyright</a></li>
-    <li><a href="contact">Contact Us</a></li>
+    <li><a href="http://avestia.com/copyright">Copyright</a></li>
+    <li><a href="http://avestia.com/contact">Contact Us</a></li>
   </ul>
 </nav>
 
 <div id="content">
-  <div class="cbp-af-header">
+  <div class="desktop">
+      <div class="cbp-af-header">
   <div class="cbp-af-inner">
-    <a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+    <a href="http://avestia.com"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
     <div class="nav1">
       <nav>
-        <a href="/">Home</a>
+        <a href="http://avestia.com">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="journals">Journals</a>
-        <a href="ethics">Ethics in Publishing</a>
-        <a href="guidelines">Author Guidelines</a>
+        <a href="http://avestia.com/journals">Journals</a>
+        <a href="http://avestia.com/ethics">Ethics in Publishing</a>
+        <a href="http://avestia.com/guidelines">Author Guidelines</a>
       </nav>
     </div>
 
     <div class="search-menu">
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
 
-    <div class="nav">
+    <div class="nav2">
       <nav>
-        <a href="/">Home</a>
+        <a href="http://avestia.com">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="journals">Journals</a>
-        <a href="ethics">Ethics in Publishing</a>
-        <a href="guidelines">Author Guidelines</a>
+        <a href="http://avestia.com/journals">Journals</a>
+        <a href="http://avestia.com/ethics">Ethics in Publishing</a>
+        <a href="http://avestia.com/guidelines">Author Guidelines</a>
       </nav>
     </div>
   </div>
 </div>
+  </div>
 
   <header>
     <div class="mobile">
       <div class="cbp-af-header">
-	<div class="cbp-af-inner">
-		<div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-      		<a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
-   	 	</div>
-    	<div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
-      		<div class="menu-trigger"><p class="menu">MENU</p></div>
-  		</div>
-	</div>
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="http://avestia.com"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
 </div>
       <div class="bg">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+        <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
 
-  <div class="grid">
-    <div class="unit unit-s-1 unit-m-1 unit-l-1">
-  <div class="main-content content php">
-   <h2>Contact Avestia Publishing</h2>
-   <p class="body">Thank you for your message!</p>
-   <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
+<div class="mobile">
+<div class="j-header">
+  <div class="name">
+    <h1>International Journal of Virtual Worlds and Human Computer Interaction (VWHCI)<br><p class="body">ISSN: 2368-6103</p></h1>
+    <div class="oalink">
+    <a href="http://avestia.com/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+  </div>
 
-   <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
+    <img src="../img/journals/j-vwhci.jpg" class="j-img">
+</div>
+</div>
+
+<div class="desktop jhead">
+  <div class="name">
+    <h1>International Journal of Virtual Worlds and Human Computer Interaction (VWHCI)</h1>
+    <div class="issn">
+    <p class="body">ISSN: 2368-6103</p>
+    <div class="oalink">
+    <a href="http://avestia.com/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="../img/j-oa.png" border="0" onmouseover="this.src='../img/j-oa-hover.png'" onmouseout="this.src='../img/j-oa.png'" class="j-oa">
+    </a>
+   </div>
+   </div>
+  </div>
+
+  <div class="j-header">
   </div>
 </div>
+
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="../">Journal Home</a>
+    <li><a href="../aims">Aims & Scopes</a>
+    <li><a href="../fee">Publishing Fee</a>
+    <li><a href="../board">Editorial Board</a>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button>
+    <li><a href="../contact">Contact Us</a>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="../volume1/issue1.html">Volume 1, Issue 1</a>
+      <li><a href="../volume2">Volume 2</a>
+      <li><a href="../current">Current Volume</a>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
+  
+  <div class="grid">
+  <div class="main-content j-home">
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
+    <h2>Contact VWHCI</h2>
+
+    <p class="body">Thank you for your message!</p>
+   <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
+
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    </div>
+  </div>
 </div>
 
-<footer>
+  <footer>
 <div class="grid">
   <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
     <div class="unit-spacer">
       <ul class="footer-links">
-        <li><a href="/" class="body-link">Avestia Publishing</a></li>
-        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><a href="http://avestia.com/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="http://avestia.com/journals" class="body-link">Journals</a></li>
         <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
-        <li><a href="terms" class="body-link">Terms of Use</a></li>
-        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+        <li><a href="http://avestia.com/terms" class="body-link">Terms of Use</a></li>
+        <li><a href="../sitemap" class="body-link">Sitemap</a></li>
       </ul>
     </div>
   </div>
@@ -277,25 +332,25 @@ mail($my_email,$subject,$message,$headers);
         
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
-          <img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
-          <img src="img/twitter.png" border="0" onmouseover="this.src='img/twitter-hover.png'" onmouseout="this.src='img/twitter.png'">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
-          <img src="img/linkedin.png" border="0" onmouseover="this.src='img/linkedin-hover.png'" onmouseout="this.src='img/linkedin.png'">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
-          <img src="img/google.png" border="0" onmouseover="this.src='img/google-hover.png'" onmouseout="this.src='img/google.png'">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
         </a>
       </div>
 
@@ -309,7 +364,7 @@ mail($my_email,$subject,$message,$headers);
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
     <script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
 
     <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
@@ -319,11 +374,12 @@ mail($my_email,$subject,$message,$headers);
     <script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
     <script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
 
-<script src="js/classie.js"></script>
-<script src="js/jquery.easing.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script defer src="js/demo.js"></script>
-<script type="text/javascript" src="css/animate.min.css"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
+<script type="text/javascript" src="../js/jnav.js"></script>
 
 <script type="text/javascript">
 <!--
@@ -333,11 +389,11 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
 var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
-var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield4", "email");
-var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield5");
-var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield6");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
 //-->
 </script>
+
 
     <script type="text/javascript">
 /*
@@ -372,6 +428,5 @@ var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield6");
 
 }).call(this);
 </script>
-
 </body>
 </html>

@@ -22,7 +22,7 @@ loadXMLDoc('mostvisited.txt',function()
     var txt=xmlhttp.responseText;
     
     
-    var res = txt.split(' - ');
+    var res = txt.split('*&^');
 
 /*var one = res[0].split(" - ");
 var two = res[1].split(" - ");
@@ -38,16 +38,16 @@ var authorsFive = res[14];
 */
 
 document.getElementById("mostVisited").innerHTML =
-"<a href=http://"+res[0]+".avestia.com"+res[10]+" class='body-link' target='_blank'>"+res[1]+"</a><p class='body'>" + 
-res[11] + "</p>" + 
-"<a href=http://"+res[2]+".avestia.com"+res[12]+" class='body-link'  target='_blank'>"+res[3]+"</a><p class='body'>" +  
-res[13] + "</p>" + 
-"<a href=http://"+res[4]+".avestia.com"+res[14]+" class='body-link'  target='_blank'>"+res[5]+"</a><p class='body'>" + 
-res[15] + "</p>" + 
-"<a href=http://"+res[6]+".avestia.com"+res[16]+" class='body-link'  target='_blank'>"+res[7]+"</a><p class='body'>" + 
-res[17] + "</p>" + 
-"<a href=http://"+res[8]+".avestia.com"+res[18]+" class='body-link'  target='_blank'>"+res[9]+"</a><p class='body'>" + 
-res[19] + "</p>";
+"<a href=http://vwhci.avestia.com"+res[5]+" class='body-link' target='_blank'>"+res[0]+"</a><p class='body'>" + 
+res[6] + "</p>" + 
+"<a href=http://vwhci.avestia.com"+res[7]+" class='body-link'  target='_blank'>"+res[1]+"</a><p class='body'>" +  
+res[8] + "</p>" + 
+"<a href=http://vwhci.avestia.com"+res[9]+" class='body-link'  target='_blank'>"+res[2]+"</a><p class='body'>" + 
+res[10] + "</p>" + 
+"<a href=http://vwhci.avestia.com"+res[11]+" class='body-link'  target='_blank'>"+res[3]+"</a><p class='body'>" + 
+res[12] + "</p>" + 
+"<a href=http://vwhci.avestia.com"+res[13]+" class='body-link'  target='_blank'>"+res[4]+"</a><p class='body'>" + 
+res[14] + "</p>";
 
     }
   });
