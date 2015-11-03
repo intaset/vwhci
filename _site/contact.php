@@ -172,10 +172,13 @@ mail($my_email,$subject,$message,$headers);
 
 <div id="content">
   <div class="desktop">
-      <div class="cbp-af-header">
-  <div class="cbp-af-inner">
-    <a href="http://avestia.com"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+<div class="cbp-af-header">
+  <div class="cbp-af-inner grid">
+    <div class="unit unit-s-2-8 unit-m-2-8 unit-l-1-7">
+      <a href="http://avestia.com"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+    </div>
 
+    <div class="unit unit-s-1-2 unit-m-4-0 unit-l-5-1">
     <div class="nav1">
       <nav>
         <a href="http://avestia.com">Home</a>
@@ -185,13 +188,17 @@ mail($my_email,$subject,$message,$headers);
         <a href="http://avestia.com/guidelines">Author Guidelines</a>
       </nav>
     </div>
+    </div>
 
+    <div class="unit unit-s-3-4 unit-m-3-5 unit-l-1-6 unit-l-3-2">
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
       <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
+    </div>
 
-    <div class="nav2">
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
+    <div class="nav">
       <nav>
         <a href="http://avestia.com">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
@@ -199,6 +206,7 @@ mail($my_email,$subject,$message,$headers);
         <a href="http://avestia.com/ethics">Ethics in Publishing</a>
         <a href="http://avestia.com/guidelines">Author Guidelines</a>
       </nav>
+    </div>
     </div>
   </div>
 </div>
