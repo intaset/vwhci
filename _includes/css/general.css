@@ -1112,6 +1112,11 @@ figure {
 .ref {
   text-indent: 0;
 }
+center .body {
+  text-align: center;
+  text-indent: 0;
+  padding-bottom: 0;
+}
 /* Journal Nav */
 .navbar.navbar-default {
     background-color: #FFF;
