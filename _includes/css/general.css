@@ -1071,6 +1071,19 @@ figure {
     display: inline-block;
 }
 
+.eqn-img {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.img .eqn-number {
+     float: none!important; 
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+}
+
 .indent .subhead {
     text-transform: inherit;
     font-size: 1.1em;
